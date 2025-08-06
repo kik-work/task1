@@ -82,17 +82,25 @@ function App() {
         <TableHeader>
           <TableRow className="bg-gray-100">
             <TableHead className="text-left px-2 py-1">ID</TableHead>
-            <TableHead className="text-left px-2 py-1">Job App ID</TableHead>
+            <TableHead className="text-left px-2 py-1 whitespace-nowrap">
+              Job App ID
+            </TableHead>
             <TableHead className="text-center px-2 py-1">
               Interview Time
             </TableHead>
             <TableHead className="text-left px-2 py-1">Mode</TableHead>
             <TableHead className="text-left px-2 py-1">Location</TableHead>
-            <TableHead className="text-left px-2 py-1">Meeting URL</TableHead>
+            <TableHead className="text-left px-2 py-1 whitespace-nowrap">
+              Meeting URL
+            </TableHead>
             <TableHead className="text-left px-2 py-1">Status</TableHead>
             <TableHead className="text-center px-2 py-1">Notes</TableHead>
-            <TableHead className="text-left px-2 py-1">First Name</TableHead>
-            <TableHead className="text-left px-2 py-1">Last Name</TableHead>
+            <TableHead className="text-left px-2 py-1 whitespace-nowrap">
+              First Name
+            </TableHead>
+            <TableHead className="text-left px-2 py-1 whitespace-nowrap">
+              Last Name
+            </TableHead>
             <TableHead className="text-center px-2 py-1">Email</TableHead>
             <TableHead className="text-left px-2 py-1">Phone</TableHead>
             <TableHead className="text-center px-2 py-1">Created At</TableHead>
@@ -104,7 +112,7 @@ function App() {
             <React.Fragment key={data.id}>
               <TableRow className="hover:bg-gray-50">
                 <TableCell className="px-2 py-1">{data.id}</TableCell>
-                <TableCell className="px-2 py-1">
+                <TableCell className="px-2 py-10">
                   {data.job_application_id}
                 </TableCell>
                 <TableCell className="px-2 py-1">
